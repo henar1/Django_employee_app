@@ -18,5 +18,14 @@ c. it will point to the local host (http://127.0.0.1:8000/)
 1. open seperate Terminal, 
    run: python3 manage.py startapp employee_register
    
+2. create a appstructure.txt inside employee_register
+3. within Employee_project>settings.py
+   Add: 'employee_register' inside INSTALLED APP space
+   
+4. Install Postgressql
+   Set the server
+
+
+   
 
  
