@@ -1,3 +1,4 @@
+Structure
 . employee_project
 |
 +---. employee_register (app folder)
