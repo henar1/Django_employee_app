@@ -22,8 +22,27 @@ c. it will point to the local host (http://127.0.0.1:8000/)
 3. within Employee_project>settings.py
    Add: 'employee_register' inside INSTALLED APP space
    
-4. Install Postgressql
+4. Install Postgressql along with pgadmin
    Set the server
+   
+5. python3 manage.py migrate  
+6. Start with Manage.py file in employee_register.
+7. After that migrate "python3 manage.py makemigrations employee_register"
+   migration folder will be created within employee_register app will start and these two aspects will be created
+    - Create model Position
+    - Create model Employee
+8. Now we need to provide migration with sql
+    'python3 manage.py sqlmigrate employee_register 0001'
+     python3 manage.py sqlmigrate app_name 0001
+     
+ 9. In order to execute the SQL script that we have recieved
+    Execute: python3 manage.py migrate
+ 10. After execution same will be modifies in PGAdmin database
+ 11. Now start with view function
+     employee_regioster>views.py
+ 12. Set path in Employee_project> urls.py
+ 13. all the requests which starts with 'employee/' will be handeled inside the newely created file inside 'employee_register>urls.py'
+ 
 
 
    
