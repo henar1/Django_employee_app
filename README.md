@@ -42,6 +42,16 @@ c. it will point to the local host (http://127.0.0.1:8000/)
      employee_regioster>views.py
  12. Set path in Employee_project> urls.py
  13. all the requests which starts with 'employee/' will be handeled inside the newely created file inside 'employee_register>urls.py'
+ 14. For executing these urls we need to create template
+ 15. Inside employee_register>template>employee_register>templates
+     Create three template:
+     - base.html (parent template)
+     - employee_list.html (child template)
+     - employee_form.html (child template)
+  
+ 16. Bootstrap style sheets
+ 17. 
+     
  
 
 
